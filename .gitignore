@@ -1,0 +1,11 @@
+# Local database (Không nên push lên Git để tránh mất dữ liệu thực trên server)
+profile/data/*.db
+
+# Uploads (Tùy chọn: nếu bạn muốn quản lý ảnh trên server riêng thì ignore thư mục này)
+profile/uploads/*
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.log
+.gemini/

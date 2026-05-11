@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio cá nhân — giới thiệu kỹ năng, dự án và kinh nghiệm của một Fullstack Developer chuyên nghiệp." />
+    <meta name="keywords" content="Portfolio, Fullstack Developer, Web Development, CV Online, Trần Đình Hoàng" />
+    <meta name="author" content="Trần Đình Hoàng" />
+
+    <!-- Open Graph / Facebook / Zalo -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anshin.infinityfree.me/" />
+    <meta property="og:title" content="Trần Đình Hoàng — Portfolio & CV Online" />
+    <meta property="og:description" content="Khám phá các dự án, kỹ năng và hành trình phát triển phần mềm của tôi. Kết nối để cùng tạo nên những sản phẩm tuyệt vời." />
+    <meta property="og:image" content="https://anshin.infinityfree.me/uploads/og-preview.jpg" />
+    <meta property="og:image:secure_url" content="https://anshin.infinityfree.me/uploads/og-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Trần Đình Hoàng Portfolio Preview" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://anshin.infinityfree.me/" />
+    <meta property="twitter:title" content="Trần Đình Hoàng — Portfolio & CV Online" />
+    <meta property="twitter:description" content="Khám phá các dự án, kỹ năng và hành trình phát triển phần mềm của tôi." />
+    <meta property="twitter:image" content="https://anshin.infinityfree.me/uploads/og-preview.jpg" />
+
+    <title>Trần Đình Hoàng — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css?v=3" />
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader" class="preloader">
+    <div class="preloader-content">
+        <div class="spinner"></div>
+        <p>Đang tải...</p>
+    </div>
+</div>
+
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="nav-logo" id="navLogo"><span>P</span>ortfolio</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#education">Học vấn</a></li>
+            <li><a href="#experience">Kinh nghiệm</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-btn" id="themeBtn" title="Đổi theme">
+                <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor;"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+            </button>
+            <button class="nav-toggle" id="navToggle">
+                <svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:currentColor;"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-avatar" id="heroAvatar">
+                <div class="avatar-placeholder">
+                    <svg viewBox="0 0 24 24" style="width:80px;height:80px;fill:var(--accent);"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 id="heroName">&nbsp;</h1>
+                <div class="title" id="heroTitle">&nbsp;</div>
+                <p class="bio" id="heroBio">&nbsp;</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;margin-right:8px;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        Liên hệ
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;margin-right:8px;"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                        Xem dự án
+                    </a>
+                    <a href="#" id="cvDownloadBtn" class="btn btn-outline" style="display:none" download>
+                        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;margin-right:8px;"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        Tải CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Giới thiệu</h2>
+            <p>Đôi nét về bản thân và hành trình của tôi</p>
+        </div>
+        <div class="contact-wrapper animate-on-scroll">
+            <div class="contact-info">
+                <h3>Thông tin liên hệ</h3>
+                <div id="contactInfoDetails">
+                    <div class="loading"><div class="spinner"></div></div>
+                </div>
+                <div class="contact-social" id="socialLinks"></div>
+            </div>
+            <div>
+                <p id="aboutBio" style="color:var(--text-secondary);font-size:1.05rem;line-height:1.8;"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section" id="skills">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Kỹ năng</h2>
+            <p>Các công nghệ và kỹ năng tôi đã tích lũy</p>
+        </div>
+        <div class="skills-grid" id="skillsContainer">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Dự án</h2>
+            <p>Những dự án tiêu biểu tôi đã thực hiện</p>
+        </div>
+        <div class="projects-grid" id="projectsContainer">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="section" id="education">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Học vấn</h2>
+            <p>Quá trình học tập và đào tạo</p>
+        </div>
+        <div class="timeline" id="educationContainer">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="section" id="experience">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Kinh nghiệm</h2>
+            <p>Hành trình làm việc và phát triển</p>
+        </div>
+        <div class="timeline" id="experienceContainer">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Liên hệ</h2>
+            <p>Hãy gửi tin nhắn cho tôi</p>
+        </div>
+        <div class="contact-wrapper animate-on-scroll">
+            <div class="contact-info">
+                <h3>Kết nối với tôi</h3>
+                <p>Bạn có câu hỏi hoặc muốn hợp tác? Đừng ngại liên hệ!</p>
+                <div id="contactInfoDetails2"></div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="contactName" placeholder="Tên của bạn" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Email" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="contactSubject" placeholder="Tiêu đề" />
+                </div>
+                <div class="form-group">
+                    <textarea id="contactMessage" placeholder="Nội dung tin nhắn" required></textarea>
+                </div>
+                <div id="formMessage" class="form-message"></div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                    <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor;margin-right:8px;"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    Gửi tin nhắn
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Portfolio. Built with <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:#ef4444;vertical-align:middle;display:inline-block;margin:0 2px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></p>
+    </div>
+</footer>
+
+<script src="js/main.js?v=3"></script>
+</body>
+</html>

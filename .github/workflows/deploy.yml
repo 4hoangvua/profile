@@ -1,0 +1,30 @@
+name: 🚀 Deploy Portfolio to InfinityFree
+
+on:
+  push:
+    branches:
+      - main  # Hoặc 'master' tùy vào nhánh chính của bạn
+
+jobs:
+  web-deploy:
+    name: 🎉 Sync to Server
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # Chú ý: Chỉ lấy nội dung trong folder profile
+        local-dir: ./profile/
+        # Chú ý: Đẩy vào folder htdocs trên server
+        server-dir: /htdocs/
+        # Loại bỏ các file không cần thiết khi sync
+        exclude: |
+          **/.git*
+          **/node_modules/**
+          data/*.db
